@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote App</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Quote Generator</h1>
+      <div class="toggle-switch">
+        <label for="dark-mode">Dark Mode</label>
+        <input type="checkbox" id="dark-mode" />
+      </div>
+    </header>
+    <div class="quote-container">
+      <div class="quote-text"></div>
+      <div class="controls">
+        <button id="prev-btn">
+          <i class="fas fa-chevron-left"></i> Previous
+        </button>
+        <button id="random-btn">Random</button>
+        <button id="next-btn">Next <i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="font-size-controls">
+        <button id="decrease-font">-</button>
+        <button id="increase-font">+</button>
+      </div>
+    </div>
+    <div class="category-container">
+      <label for="category-select">Select Category:</label>
+      <select id="category-select">
+        <option value="science">Science</option>
+        <option value="inspiration">Inspiration</option>
+        <option value="philoshopy">Philosophy</option>
+      </select>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
